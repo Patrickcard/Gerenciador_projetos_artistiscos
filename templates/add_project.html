@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Add Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Add New Project</h1>
+      <form method="post">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" required>
+        <label for="description">Description</label>
+        <textarea id="description" name="description" required></textarea>
+        <label for="status">Status</label>
+        <select id="status" name="status" required>
+          <option value="In Progress">In Progress</option>
+          <option value="Completed">Completed</option>
+          <option value="On Hold">On Hold</option>
+        </select>
+        <label for="budget">Budget</label>
+        <input type="number" id="budget" name="budget" step="0.01" required>
+        <label for="timeline">Timeline</label>
+        <textarea id="timeline" name="timeline"></textarea>
+        <button type="submit">Add Project</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <title>Logout</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Logout</h1>
+    <p>You have been logged out.</p>
+    <a href="{{ url_for('login') }}">Login Again</a>
+  </div>
+</body>
+</html>
